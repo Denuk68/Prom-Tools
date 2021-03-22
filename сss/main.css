@@ -79,7 +79,6 @@ body{
 .header__menu ul li {
     list-style: none;
     margin-left: 35px;
-
 }
 .header__menu ul li a {
   text-decoration: none;
@@ -87,6 +86,9 @@ body{
   font-size: 14px;
   line-height: 20px;
   color: #d3d3d3;
+}
+.header__menu ul li a.active{
+  color: #d4a207;
 }
 .header__menu ul li a:hover{
   color: #d4a207;
@@ -335,5 +337,11 @@ main{
   /* Home */
   .home .wrapper{
     flex-direction: column;
+  }
+}
+@media (max-width: 575px) {
+  /* Tools */
+  .tools .wrapper{
+    width: 320px;
   }
 }
