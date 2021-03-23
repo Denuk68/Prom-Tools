@@ -54,19 +54,37 @@ body{
   position: relative;
   z-index: 3;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
+  width: 210px;
+  height: 60px;
   font-size: 38px;
   font-weight: bold;
   line-height: 0.8;
-  color: #d4a207;
 }
-.header__logo span{
+.header__logo .world{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #d4a207;
+  text-align: center;
+  font-size: 19px;
+}
+.header__logo .prom{
+  position: absolute;
+  top: 0;
+  right: 73px;
+  color: #f9b207;
+}
+.header__logo .instrument{
+  position: absolute;
+  bottom: -1.5px;
+  right: 0;
   color: #d3d3d3;
 }
 .header__logo img{
   position: absolute;
   top: 0;
-  right: 5px;
+  right: 0;
   width: 65px;
   height: auto;
 }
@@ -161,7 +179,6 @@ main{
   color: #d4a207;
 }
 .home .card__info.contact{
-  display: flex;
   flex-direction: column; 
 }
 .home .card__info.contact a{
@@ -238,6 +255,72 @@ main{
 }
 .tools .brands ul li:hover{
   color: #806204;
+}
+/* Delivery */
+.delivery .title{
+  width: 100%;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10px 0;
+  margin-top: 20px;
+  border: 4px #d4a207 outset;
+  border-radius:5px ;
+  background-color: rgba(0, 0, 0, 0.7)
+}
+.delivery .wrapper{
+  width: 100%;
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+.delivery .card{
+  width: 320px;
+  height: 300px;
+  margin-bottom: 20px;
+  border: 4px #d4a207 outset;
+  border-radius:5px ;
+  background-color: rgba(0, 0, 0, 0.7)
+}
+.delivery .card__head{
+  display: flex;
+  height:100px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.delivery .card__circle{
+  position: relative;
+  width: 75px;
+  height: 75px;
+  border: 3px #d4a207 outset ;
+  border-radius: 50%;
+}
+.delivery .card__circle i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.delivery .card h2 {
+  text-align: center;
+}
+.delivery .card__info{
+  height: 165px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 15px;  
+  font-size: 20px;
+}
+.delivery .card__info a{
+  text-decoration: none;
+  color: #d4a207;
+}
+.delivery .card__info span{
+  color: #d4a207;
 }
 
 
@@ -338,10 +421,18 @@ main{
   .home .wrapper{
     flex-direction: column;
   }
+  /* Delivery */
+  .delivery .wrapper{
+    flex-direction: column;
+  }
 }
 @media (max-width: 575px) {
   /* Tools */
   .tools .wrapper{
+    width: 320px;
+  }
+  /* Delivery */
+  .delivery .title{
     width: 320px;
   }
 }
