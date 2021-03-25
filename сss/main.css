@@ -47,8 +47,8 @@ table {
 
 /* Fonts */
 @font-face{
-  font-family: 'Times New Roman';
-  src: url(../fonts/TimesNewRoman.ttf);
+  font-family: TimesNewRoman;
+  src: url(../fonts/TimesNewRoman.woff);
 }
 html,
 body {
@@ -62,7 +62,7 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  font-family: 'Times New Roman';
+  font-family: TimesNewRoman;
 }
 .container {
   max-width: 1200px;
@@ -105,30 +105,23 @@ h3{
   z-index: 3;
   display: flex;
   flex-direction: column;  
-  width: 200px;
+  width: 185px;
   height: 60px;
   font-size: 38px;
   font-weight: bold;
   line-height: 0.8;
-}
-.header__logo .world {
-  position: absolute;
-  top: 2px;
-  left: 0;
-  color: #d4a207;
-  text-align: center;
-  font-size: 18.6px;
+  margin-left: 18px;
 }
 .header__logo .prom{
   position: absolute;
   top: 0;
-  right: 73px;
+  left: 0;
   color: #f9b207;
 }
 .header__logo .instrument{
   position: absolute;
   bottom: 0;
-  right: 0;
+  left: 0;
   color: #d3d3d3;
 }
 .header__logo img{
@@ -138,7 +131,14 @@ h3{
   width: 65px;
   height: auto;
 }
-
+.header__logo .world {
+  position: absolute;
+  top: 2.3px;
+  left: -18px;
+  color: #d4a207;
+  text-align: center;
+  font-size: 18.5px;
+}
 .header__menu ul{
   display: flex;
   position: relative;
