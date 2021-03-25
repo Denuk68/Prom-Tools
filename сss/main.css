@@ -1,12 +1,55 @@
+/* Reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 *,
-*:before,
-*:after {
-  padding: 0;
-  margin: 0;
-  border: 0;
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
+/* Fonts */
+@font-face{
+  font-family: 'Times New Roman';
+  src: url(../fonts/TimesNewRoman.ttf);
+}
 html,
 body {
   height: 100%;
@@ -19,11 +62,18 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  font-family: 'Times New Roman';
 }
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+h2{
+  font-size: 24px;
+}
+h3{
+  font-size: 20px;
 }
 
 /* Header */
@@ -55,19 +105,19 @@ body{
   z-index: 3;
   display: flex;
   flex-direction: column;  
-  width: 210px;
+  width: 200px;
   height: 60px;
   font-size: 38px;
   font-weight: bold;
   line-height: 0.8;
 }
-.header__logo .world{
+.header__logo .world {
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
   color: #d4a207;
   text-align: center;
-  font-size: 19px;
+  font-size: 18.6px;
 }
 .header__logo .prom{
   position: absolute;
@@ -77,7 +127,7 @@ body{
 }
 .header__logo .instrument{
   position: absolute;
-  bottom: -1.5px;
+  bottom: 0;
   right: 0;
   color: #d3d3d3;
 }
@@ -95,12 +145,11 @@ body{
   z-index: 3;
 }
 .header__menu ul li {
-    list-style: none;
-    margin-left: 35px;
+  list-style: none;
+  margin-left: 35px;
 }
 .header__menu ul li a {
   text-decoration: none;
-  font-weight: 700;
   font-size: 14px;
   line-height: 20px;
   color: #d3d3d3;
