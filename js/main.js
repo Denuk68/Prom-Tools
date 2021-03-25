@@ -12,7 +12,8 @@ $(document).ready(function(){
 $(document).ready(function () {
     var offset = $(".header").innerHeight();
     $(".header__menu ul li a[href^='#']").click(function () {
-      var target = $(this).attr("href");
+      var target = $(this).attr("href"); 
+      $('body').toggleClass('lock');
       $("html, body").animate(
         {
           scrollTop: $(target).offset().top - offset,
