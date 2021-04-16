@@ -69,6 +69,10 @@ body{
   margin: 0 auto;
   padding: 0 15px;
 }
+h1.hidden{
+  visibility: hidden;
+  font-size: 1px;
+}
 h2{
   font-size: 24px;
 }
