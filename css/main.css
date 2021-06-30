@@ -24,8 +24,15 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+html{
+  height: 100%;
+}
 body {
-	line-height: 1;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 ol, ul {
 	list-style: none;
@@ -47,8 +54,6 @@ table {
   margin: 0 auto;
   padding: 0 15px;
 }
-
-
 /* Header */
 .header{
   background-color: #f0f2fa;
@@ -108,7 +113,22 @@ table {
 .header__body .сontact ul li:last-child a:hover{
  background-color: #da7264;
 }
-
+/* Main */
+.main{
+  flex-grow: 1;
+}
+/* Footer */
+.footer{
+  background-color: #f0f2fa;
+}
+.footer__body{
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #1270b2;
+}
 
 @media (max-width: 1200px) {
   .container {
