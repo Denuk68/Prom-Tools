@@ -149,11 +149,23 @@ table {
 @media (max-width: 650px) {
    /* Header */
    .header__body{
-    height: 140px;
+    height: 220px;
     flex-direction: column;
     justify-content: space-around;
   }
-   .header__body .сontact  {
-    margin-bottom: 13px;
+  .header__body .сontact ul {
+   flex-direction: column;
+  }
+  .header__body .сontact ul li:first-child {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  .header__body .сontact ul li {
+    width: 250px;
+  }
+  .header__body .сontact ul li a {
+    display: flex;
+    justify-content: center;
+    padding: 20px 50px;
   }
 }
