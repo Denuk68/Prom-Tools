@@ -176,10 +176,31 @@ table {
   right: auto;
   left: -20px;
 }
-/* Owl Carousel slider */
+
+/* Index Page */
 .slider{
   background-color: #f0f2fa;
   padding: 30px 0;
+}
+.about .head{
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1270b2;
+}
+.about .head h1{
+  padding: 0 15px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+}
+.about .head h1 span.red{
+  color: #db5c4c;
+}
+.about .head h1 span.green{
+  color: #79be00;
 }
 
 @media (max-width: 1200px) {
@@ -252,5 +273,8 @@ table {
   .navigation ul li a{
     font-size: 25px;
   }
-
+  /* Index Page */
+  .about .head {
+    height: 100px;
+  }
 }
