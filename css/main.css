@@ -176,6 +176,11 @@ table {
   right: auto;
   left: -20px;
 }
+/* Owl Carousel slider */
+.slider{
+  background-color: #f0f2fa;
+  padding: 30px 0;
+}
 
 @media (max-width: 1200px) {
   .container {
