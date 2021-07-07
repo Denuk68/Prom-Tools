@@ -25,3 +25,16 @@ $(".slider__carousel").owlCarousel({
         },
     },
 });
+
+let menu_li = document.querySelectorAll(".menu #main__li");
+let submenu = document.querySelectorAll("ul.submenu");
+for(let i = 0; i < menu_li.length; i ++ ){
+    menu_li[i].addEventListener("mouseenter", function(){
+        submenu[i].classList.toggle("active");
+    });
+};
+for(let i = 0; i < menu_li.length; i ++ ){
+    menu_li[i].addEventListener("mouseleave", function(){
+        submenu[i].classList.toggle("active");
+    });
+};
