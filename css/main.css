@@ -132,13 +132,14 @@ table {
 }
 /* Navigation */
 .navigation {
-  background-color: #1270b2;
+  background-color: #1270b2;  
 }
 .navigation ul.menu {
   height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 .navigation ul.menu li {
   position: relative;
@@ -167,44 +168,6 @@ table {
 .navigation ul.menu li i#First{
   right: auto;
   left: -20px;
-}
-.navigation ul.submenu{
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 2;
-  padding:  10px;
-  width: 310px;
-  display: none;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  background-color: #1270b2;
-  border: #f0f2fa solid 3px;
-}
-.navigation ul.submenu.active{
-  display: flex;
-}
-.navigation ul.submenu li{
-  padding: 0;
-  line-height: 1.5; 
-  width: 100%;
-  transition: padding-left 0.1s linear;
-}
-.navigation ul.submenu li:hover{
- padding-left: 2px;
-}
-.navigation ul.submenu li a{
-  text-decoration: none;   
-  font-size: 18px; 
-  color: #f0f2fa;
-  width: 100%;
-  height: 100%;  
-  border-bottom: 2px solid #1270b2;
-}
-.navigation ul.submenu li a:hover{
- color: #79be00; 
- border-bottom: 2px solid #fff;
 }
 /* Index Page */
 .slider{
