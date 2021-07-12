@@ -116,6 +116,7 @@ table {
 /* Main */
 .main{
   flex-grow: 1;
+  background-color: #f0f2fa;
 }
 /* Footer */
 .footer{
@@ -129,57 +130,10 @@ table {
   font-weight: bold;
   color: #1270b2;
 }
-/* Navigation */
-.navigation {
-  background-color: #1270b2;
-}
-.navigation ul {
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-.navigation ul li {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 30px;
-  height: 100%;
-  cursor: pointer;
-}
-.navigation ul li a{  
-  width: 100%;
-  height: 100%;    
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  color: #f0f2fa;
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-.navigation ul li a:hover{
-  color: #79be00;
-}
-.navigation ul li i{
-  position: absolute;
-  top: -10px;
-  right: -20px;
-  color: #f0f2fa;
-  font-size: 70px;
-  transform: scale(1 , 1.2);
-}
-.navigation ul li i#First{
-  right: auto;
-  left: -20px;
-}
+
 
 /* Index Page */
 .slider{
-  background-color: #f0f2fa;
   padding: 30px 0;
 }
 .about .head , .service .head, .location .head{
@@ -205,7 +159,6 @@ table {
 }
 .about .main, .service .main{
   padding: 15px;
-  background-color: #f0f2fa;
 }
 .about .main p , .service .main p{
   text-align: justify;
@@ -214,9 +167,38 @@ table {
   font-size: 18px;
   color: #1270b2;
 }
-.location{
-  background-color: #f0f2fa;
+
+
+/* Navigation */
+.navigation{
+  background-color: #1270b2; 
+  color: #fff;
+  font-size: 20px;
 }
+.navigation nav ul {
+  display: flex;
+}
+.navigation ul li{ 
+  position: relative;
+  cursor: pointer;
+  margin-right: 20px;
+}
+.navigation ul li:last-child{
+  margin-right: 0;
+}
+.navigation nav ul li ul{
+  display: none;  
+  flex-direction: column;
+  position: absolute;
+  background-color: #1270b2;
+  top: 100%;
+  left: 0;
+  z-index: 999;  
+}
+.navigation nav ul li:hover > ul {
+  display: flex; 
+ }
+
 
 
 @media (max-width: 1200px) {
@@ -233,15 +215,18 @@ table {
   .container {
     max-width: none;
   }
-  /* Navigation */
-  .navigation ul li a{
-    font-size: 14px;
-  }
 }
 
 @media (max-width: 650px) {
   .container{
     padding: 0;
+  }
+  /* Navigation */
+  .navigation nav ul {
+    flex-direction: column;
+  }
+  .navigation nav ul li ul{ 
+    position: static;
   }
    /* Header */
    .header__body{
@@ -264,30 +249,6 @@ table {
     justify-content: center;
     padding: 20px 50px;
     font-size: 16px;
-  }
-  /* Navigation */
-  .navigation ul {
-    height: 270px;
-    flex-direction: column;
-  }
-  .navigation ul li{
-    width: 100%;
-    border-bottom: 8px solid #f0f2fa;
-  }
-  .navigation ul li i#First{
-    display: none;
-}
-.navigation ul li:last-child{
-  border-bottom: 0px;
-}
-  .navigation ul li i{
-    top: -5px;
-    right: 50px;
-    font-size: 57px;
-    transform: scale(1 , 1.4);
-}
-  .navigation ul li a{
-    font-size: 25px;
   }
     /* Index Page */
   .about .head {
