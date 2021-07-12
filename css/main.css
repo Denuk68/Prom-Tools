@@ -175,18 +175,22 @@ table {
   color: #fff;
   font-size: 20px;
 }
-.navigation nav ul {
+.navigation nav ul.menu {
   display: flex;
+  justify-content: center;
 }
-.navigation ul li{ 
+.navigation ul.menu > li{ 
+  display: flex;
+  align-items: center;
+  height: 50px;
   position: relative;
   cursor: pointer;
   margin-right: 20px;
 }
-.navigation ul li:last-child{
+.navigation ul.menu li:last-child{
   margin-right: 0;
 }
-.navigation nav ul li ul{
+.navigation nav ul.menu li ul.submenu{
   display: none;  
   flex-direction: column;
   position: absolute;
@@ -195,7 +199,7 @@ table {
   left: 0;
   z-index: 999;  
 }
-.navigation nav ul li:hover > ul {
+.navigation nav ul.menu li:hover > ul.submenu {
   display: flex; 
  }
 
@@ -222,10 +226,16 @@ table {
     padding: 0;
   }
   /* Navigation */
-  .navigation nav ul {
+  .navigation nav ul.menu {
     flex-direction: column;
   }
-  .navigation nav ul li ul{ 
+  .navigation ul.menu > li{ 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+  }
+  .navigation nav ul.menu li ul.submenu{ 
     position: static;
   }
    /* Header */
