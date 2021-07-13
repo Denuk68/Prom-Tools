@@ -290,15 +290,18 @@ table {
     align-items:  center;
     height: auto;
     margin-right: 0;
+    border-bottom: 3px solid #f0f2fa;
   }
   .navigation ul.menu  li span{ 
     padding: 10px 0;
   }
   .navigation  ul.submenu{ 
     position: static;
+    width: 100%;
+    border: none;
   }
-  .navigation  ul.submenu{ 
-    position: static;
+  .navigation  ul.submenu li{ 
+    border: none;
   }
 
 
