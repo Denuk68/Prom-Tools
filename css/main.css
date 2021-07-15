@@ -191,12 +191,12 @@ table {
 /* Main */
 .main{
   flex-grow: 1;
-  background-color: #f0f2fa;
+  background-color: #fff;
 }
 
 /* Footer */
 .footer{
-  background-color: #fff;
+  background-color: #f0f2fa;
 }
 .footer__body{
   height: 40px;
@@ -380,6 +380,10 @@ table {
 .stihl__pulu .product__item{
 	height: 345px;
  }
+/* STIHL Motokosu */
+.stihl__motokosu .product__item img{
+  max-height: 200px;
+}
 
 @media (max-width: 1200px) {
   .container {
