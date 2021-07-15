@@ -390,6 +390,13 @@ main{
  .stihl__aeratoru .product__item img{
 	max-height: 195px;
  }
+  /* STIHL Muyku */
+  .stihl__muyku .product__item  img{
+    max-height: 195px;
+   }
+   .stihl__muyku .product__item .product_list{
+    padding: 5px 15px;
+   }
 
 @media (max-width: 1200px) {
   .container {
