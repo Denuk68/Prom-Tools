@@ -384,6 +384,10 @@ table {
 .stihl__motokosu .product__item img{
   max-height: 200px;
 }
+ /* STIHL Gazonokosarku */
+ .stihl__gazonokosarku .product__item img{
+	max-height: 195px;
+ }
 
 @media (max-width: 1200px) {
   .container {
