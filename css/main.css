@@ -128,7 +128,7 @@ table {
   display: flex;
   justify-content: center;
 }
-.navigation  ul.menu li a.mobile {
+.navigation  ul.menu li a.home {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff;
@@ -136,7 +136,7 @@ table {
   font-style: 20px;
   padding: 10px 0;
 }
-.navigation  ul.menu li a.mobile:hover {
+.navigation  ul.menu li a.home:hover {
   color: #79be00;
 }
 .navigation ul.menu > li{  
@@ -397,6 +397,11 @@ main{
    .stihl__muyku .product__item .product_list{
     padding: 5px 15px;
    }
+ /* STIHL Povitrodyuku */
+ .stihl__povitrodyuku .product__item{
+	height: 310px;
+ }
+
 
 @media (max-width: 1200px) {
   .container {
