@@ -401,6 +401,58 @@ main{
  .stihl__povitrodyuku .product__item{
 	height: 310px;
  }
+ /* Makita Druli */
+.makita__druli img{
+	max-height: 140px;
+}
+.makita__druli .product__item{
+  height: 360px;
+}
+/* Makita Perferatoru */
+.makita__perferatoru img{
+	max-height: 140px;
+}
+/* Makita Kutovi Shlifmashunu */
+.makita__kutovi__shlifmashunu img{
+ 	max-height: 160px;
+}
+/* Makita  Shlifmashunu */
+.makita__shlifmashunu img{
+ 	max-height: 170px;
+}
+.makita__shlifmashunu .product__item{
+ 	height: 380px;
+}
+/* Makita Shurupovertu */
+.makita__shurupovertu .product__item.change{
+	height: 370px;
+}
+/* Makita Shlifmashunu */
+.makita__shlifmashunu img{
+	max-height: 170px;
+}
+/* Makita Pulku */
+.makita__pulku img{
+	max-height: 170px;
+}
+.makita__pulku .product__item{
+  height: 360px;
+}
+/* Makita Lobzuku */
+.makita__lobzuku img{
+	min-height: 130px;
+}
+.makita__lobzuku .product__item{
+  height: 360px;
+}
+/* Makita Frezeru */
+.makita__frezeru img{
+	min-height: 140px;
+}
+.makita__frezeru .product__item{
+	height: 350px;
+}
+
 
 
 @media (max-width: 1200px) {
