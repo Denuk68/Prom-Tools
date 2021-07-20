@@ -452,6 +452,41 @@ main{
 .makita__frezeru .product__item{
 	height: 350px;
 }
+/* Metabo Perferatoru */
+.metabo__perferatoru .product__item{
+	height: 350px;
+}
+/* Metabo Kutovi Shlifmashunu */
+.metabo__kutovi__slifmashunu .product__item{
+	height: 350px;
+}
+/* Metabo  Shlifmashunu */
+.metabo__shlifmashunu .product__item{
+	height: 350px;
+}
+/* Metabo  Pulku */
+.metabo__pulku img{
+	max-height: 150px;
+}
+/* Metabo  Lobzuku */
+.metabo__lobzuku .product__item{
+	height: 350px;
+}
+/* Metabo  Gaykovertu */
+.metabo__gaykovertu img{
+	max-height: 150px;
+}
+/* Metabo  Termofenu */
+.metabo__termofenu .product__item{
+	height: 350px;
+}
+.metabo__termofenu img{
+	max-height: 150px;
+}
+/* Metabo  Kompresoru */
+.metabo__kompresoru .product__item{
+	height: 360px;
+}
 
 
 
