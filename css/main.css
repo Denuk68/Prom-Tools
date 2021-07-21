@@ -180,10 +180,6 @@ table {
 .navigation  ul.submenu a:hover{    
  color: #79be00;
 }
-.navigation ul.menu li:hover > ul.submenu {
-  display: flex; 
- }
-
 /* Main */
 main{
   flex-grow: 1;
