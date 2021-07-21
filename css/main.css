@@ -165,10 +165,6 @@ table {
   background-color: #1270b2; 
   border: 3px #fff solid; 
 }
-.navigation  ul.submenu.right{  
-  left: auto;
-  right: 0;
-}
 .navigation ul.submenu li {  
   width: 100%;
   text-align: center;  
@@ -357,12 +353,6 @@ main{
   color: #fff;
   text-align: center;
   line-height: 1.2;
-}
-.about .head h1 span.red , .service .head h1 span.red, .location .head h1 span.red{
-  color: #db5c4c;
-}
-.about .head h1 span.green, .service .head h1 span.green, .location .head h1 span.green{
-  color: #79be00;
 }
 .about .main, .service .main{
   padding: 15px;
@@ -564,7 +554,6 @@ main{
     text-transform: uppercase;
     font-size: 20px;
   }
-  
 	/* Cart Category */
 	.category__item h3{
 		font-size: 15px;
